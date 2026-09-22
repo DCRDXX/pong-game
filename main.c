@@ -214,7 +214,9 @@ int main()
 	    ball_speed.x = dir1 * (rand() % 3 + 2);
 	    ball_speed.y = dir2 * (rand() % 3 + 4);
 	    printf("player1 score:%d, player2 score:%d\n", score1, score2);
-	}	    
+	}
+	SDL_FillSurfaceRect(surface, &top, 0xffffffff);
+	SDL_FillSurfaceRect(surface, &ball, 0xffffffff);
 	SDL_FillSurfaceRect(surface, &border, 0xffffffff);	
 	SDL_UpdateWindowSurface(window);
 	SDL_Delay(10);
