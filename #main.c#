@@ -220,6 +220,5 @@ int main()
 	SDL_Delay(10);
     }
     return 0;
+	
 }
-
-//test
